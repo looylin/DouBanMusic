@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豆瓣音乐</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/wrapper.css">
+    <link rel="stylesheet" href="./css/wrap-popular-artists.css">
+    <link rel="stylesheet" href="./css/wrap-editor-featured.css">
+    <link rel="stylesheet" href="./css/right-nav.css">
+
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="lin-nav-info">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+        </div>
+        <div class="lin-nav-doubanapp">
+            <a href="#">下载豆瓣客户端</a>
+            <!-- hover 的时候 弹出 doubanapp 下载 -->
+        </div>
+        <div class="lin-nav-item">
+            <ul>
+                <li>
+                    <a href="#">豆瓣</a>
+                </li>
+                <li>
+                    <a href="#">读书</a>
+                </li>
+                <li>
+                    <a href="#">电影</a>
+                </li>
+                <li>
+                    <a href="#">音乐</a>
+                </li>
+                <li>
+                    <a href="#">同城</a>
+                </li>
+                <li>
+                    <a href="#">小组</a>
+                </li>
+                <li>
+                    <a href="#">阅读</a>
+                </li>
+                <li>
+                    <a href="#">FM</a>
+                </li>
+                <li>
+                    <a href="#">时间</a>
+                </li>
+                <li>
+                    <a href="#">市集</a>
+                </li>
+                <li>
+                    <a href="#">更多</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="music">
+        <div class="nav-wrap">
+            <div class="nav-primary">
+                <div class="nav-logo">
+                </div>
+                <div class="nav-search">
+                    <div class="inp">
+                        <input class="input" type="text" value="" autocomplete="off" placeholder="唱片名、表演者、条码、ISRC">
+                        <button class="nav-btn"></button>
+                        <ul id="ajaxdata"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+    <div class="music-nav">
+        <div class="nav-items">
+            <ul>
+                <li>
+                    <a href="#">音乐人</a>
+                </li>
+                <li>
+                    <a href="#">伯鱼豆瓣音乐周</a>
+                </li>
+                <li>
+                    <a href="#">金阳毛计划</a>
+                </li>
+                <li>
+                    <a href="#">专题</a>
+                </li>
+                <li>
+                    <a href="#">排行榜</a>
+                </li>
+                <li>
+                    <a href="#">分类浏览</a>
+                </li>
+                <li>
+                    <a href="#">乐评</a>
+                </li>
+                <li>
+                    <a href="#">豆瓣FM</a>
+                </li>
+                <li>
+                    <a href="#">歌单</a>
+                </li>
+                <li>
+                    <a href="#">阿比鹿音乐奖</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrap-item">
+            <div class="right-nav">
+                <div class="img-warp">
+                    <a href="javascript:void(0)">
+                        <img src="./img/guanggao0457.png" alt="求职岗位：前端工程师。名字：林振强" title="求职岗位：前端工程师。名字：林振强">
+                    </a>
+                    <div class="guanggao">广告</div>
+                </div>
+                <div class="join">
+                    <div class="join-block">
+                        <h2><a href="javascript:void(0)">44352</a></h2>
+                        <p>音乐人</p>
+                    </div>
+                    <div class="join-block">
+                        <h2><a href="javascript:void(0)">2653</a></h2>
+                        <p>播客</p>
+                    </div>
+                    <div class="join-block">
+                        <h2><a href="javascript:void(0)">1101</a></h2>
+                        <p>厂牌</p>
+                    </div>
+                    <div class="clear-fix"></div>
+                    <a class="join-button" href="javascript:void(0)">我要加入</a>
+                </div>
+                <div class="tag-block">
+                    <div class="tag-header">热门音乐人分类</div>
+                    <div class="tag-more">
+                        <a href="javascript:void(0)">更多</a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th><a href="javascript:void(0)">流行</a></th>
+                                <td><a href="javascript:void(0)">轻音乐</a></td>
+                            </tr>
+                            <tr>
+                                <th><a href="javascript:void(0)">摇滚</a></th>
+                                <td><a href="javascript:void(0)">古典</a></td>
+                            </tr>
+                            <tr>
+                                <th><a href="javascript:void(0)">电子</a></th>
+                                <td><a href="javascript:void(0)">世界音乐</a></td>
+                            </tr>
+                            <tr>
+                                <th><a href="javascript:void(0)">民谣</a></th>
+                                <td><a href="javascript:void(0)">说唱</a></td>
+                            </tr>
+                            <tr>
+                                <th><a href="javascript:void(0)">爵士</a></th>
+                                <td><a href="javascript:void(0)">原声</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="hot-artist-songs">
+                    <div class="side-block">
+                        <div class="side-header">
+                            <span>本周单曲榜</span>
+                            <a class="play-button" href="javascript:void(0)">
+                                <i></i>
+                                <span>&nbsp;播放全部</span>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <ul class="section-titles">
+                                <li class="on"><a href="javascript:void(0)">最热</a></li>
+                                <li><a href="javascript:void(0)">摇滚</a></li>
+                                <li><a href="javascript:void(0)">民谣</a></li>
+                                <li><a href="javascript:void(0)">流行</a></li>
+                                <li><a href="javascript:void(0)">电子</a></li>
+                                <li><a href="javascript:void(0)">说唱</a></li>
+                            </ul>
+                            <ul class="lin-artist-songs">
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="http://img3.doubanio.com/view/site/small/public/337facb0f911d9c.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>无名</h3>
+                                    <p>
+                                        <span>P.K.14</span>
+                                        <span> / </span>
+                                        <span>1548</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">1</span>
+                                </li>
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="http://img3.doubanio.com/view/site/small/public/e5a1139de1f09b6.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>绝望的悠闲</h3>
+                                    <p>
+                                        <span>沈帜</span>
+                                        <span> / </span>
+                                        <span>540</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">2</span>
+                                </li>
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="http://img3.doubanio.com/view/site/small/public/62223ca345dcc96.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>打碎了玻璃再离开</h3>
+                                    <p>
+                                        <span>黎忘年</span>
+                                        <span> / </span>
+                                        <span>2476</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">3</span>
+                                </li>
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="http://img7.doubanio.com/view/site/small/public/effb975d12bb1a3.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>夏夜晚风cover</h3>
+                                    <p>
+                                        <span>灯草绒</span>
+                                        <span> / </span>
+                                        <span>2221</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">4</span>
+                                </li>
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="http://img7.doubanio.com/view/site/small/public/37bc99bdeb22400.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>December</h3>
+                                    <p>
+                                        <span>Ian</span>
+                                        <span> / </span>
+                                        <span>1565</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">5</span>
+                                </li>
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="http://img7.doubanio.com/view/subject/s/public/s29756355.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>游园惊梦-剪辑试听</h3>
+                                    <p>
+                                        <span>A.J.Alex</span>
+                                        <span> / </span>
+                                        <span>3291</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">6</span>
+                                </li>
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="http://img3.doubanio.com/view/site/small/public/4a0a345adce6c98.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>土罗三三</h3>
+                                    <p>
+                                        <span>小红</span>
+                                        <span> / </span>
+                                        <span>880</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">7</span>
+                                </li>
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="http://img7.doubanio.com/view/site/small/public/1a09c09b005c3a2.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>小操（初稿）</h3>
+                                    <p>
+                                        <span>幽泉</span>
+                                        <span> / </span>
+                                        <span>810</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">8</span>
+                                </li>
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="http://img7.doubanio.com/view/site/small/public/8b7b7eff73b30ae.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>故事</h3>
+                                    <p>
+                                        <span>bbr</span>
+                                        <span> / </span>
+                                        <span>325</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">9</span>
+                                </li>
+                                <li class="artist-songs">
+                                    <div class="avatar">
+                                        <img src="https://img3.doubanio.com/view/site/small/public/19afc1c81f9c3ce.jpg" alt="">
+                                        <span class="icon">
+                                            <i class="icon-play"></i>
+                                        </span>
+                                    </div>
+                                    <h3>brothethunder</h3>
+                                    <p>
+                                        <span>Ceezy</span>
+                                        <span> / </span>
+                                        <span>2437</span>
+                                        <span>次播放</span>
+                                    </p>
+                                    <span class="rank">10</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-nav">
+                <div class="slick-list">
+                    <div class="shuffling">
+                        <ul class="imgreven">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/lubo/banner-2690.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/lubo/banner-2700.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/lubo/banner-2703.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/lubo/banner-2704.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/lubo/banner-2705.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/lubo/banner-2706.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/lubo/banner-2690.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="btnbox">
+                            <span class="leftbox">&lt;</span>
+                            <span class="rightbox">&gt;</span>
+                        </div>
+                        <div class="dotbox">
+                            <ul>
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="popular-artists">
+                    <ul>
+                        <li>本周流行音乐人</li>
+                        |
+                        <li class="rising">上升最快音乐人</li>
+                    </ul>
+                    <div class="artists">
+                        <div class="artists-item">
+                            <div class="cover">
+                                <div class="cover-img">
+                                    <a class="cover-a" href="javascript:void(0)">
+                                        <div class="player-img player-imga"></div>
+                                        <div class="plauer-btn-bg">
+                                            <div class="hoverlay">
+                                                <p>空.威德</p>
+                                                <p>Ambient 纪录片配乐</p>
+                                                <p>催眠擎天柱（短片配乐）</p>
+                                                <p>Philip Larkin Blues </p>
+                                            </div>
+                                            <span class="span-player-round-btn">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="cover-name" href="javascript:void(0)">沈帜</a>
+                                <p>轻音乐 Easy Listening</p>
+                            </div>
+                            <div class="cover">
+                                <div class="cover-img">
+                                    <a class="cover-a" href="javascript:void(0)">
+                                        <div class="player-img player-imgb"></div>
+                                        <div class="plauer-btn-bg">
+                                            <div class="hoverlay">
+                                                <p>空.威德</p>
+                                                <p>Ambient 纪录片配乐</p>
+                                                <p>催眠擎天柱（短片配乐）</p>
+                                                <p>Philip Larkin Blues </p>
+                                            </div>
+                                            <span class="span-player-round-btn">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="cover-name" href="javascript:void(0)">P.K.14</a>
+                                <p>摇滚 Rock</p>
+                            </div>
+                            <div class="cover">
+                                <div class="cover-img">
+                                    <a class="cover-a" href="javascript:void(0)">
+                                        <div class="player-img player-imgc"></div>
+                                        <div class="plauer-btn-bg">
+                                            <div class="hoverlay">
+                                                <p>空.威德</p>
+                                                <p>Ambient 纪录片配乐</p>
+                                                <p>催眠擎天柱（短片配乐）</p>
+                                                <p>Philip Larkin Blues </p>
+                                            </div>
+                                            <span class="span-player-round-btn">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="cover-name" href="javascript:void(0)">A.J.Alex</a>
+                                <p>原声 Soundtrack</p>
+                            </div>
+                            <div class="cover">
+                                <div class="cover-img player-imgd">
+                                    <a class="cover-a" href="javascript:void(0)">
+                                        <div class="player-img .player-imge"></div>
+                                        <div class="plauer-btn-bg">
+                                            <div class="hoverlay">
+                                                <p>空.威德</p>
+                                                <p>Ambient 纪录片配乐</p>
+                                                <p>催眠擎天柱（短片配乐）</p>
+                                                <p>Philip Larkin Blues </p>
+                                            </div>
+                                            <span class="span-player-round-btn">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="cover-name" href="javascript:void(0)">Arrebato</a>
+                                <p>电子 Electronica</p>
+                            </div>
+                            <div class="cover">
+                                <div class="cover-img">
+                                    <a class="cover-a" href="javascript:void(0)">
+                                        <div class="player-img player-imgf"></div>
+                                        <div class="plauer-btn-bg">
+                                            <div class="hoverlay">
+                                                <p>空.威德</p>
+                                                <p>Ambient 纪录片配乐</p>
+                                                <p>催眠擎天柱（短片配乐）</p>
+                                                <p>Philip Larkin Blues </p>
+                                            </div>
+                                            <span class="span-player-round-btn">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="cover-name" href="javascript:void(0)">黎忘年</a>
+                                <p>摇滚 Rock</p>
+                            </div>
+                            <div class="cover">
+                                <div class="cover-img">
+                                    <a class="cover-a" href="javascript:void(0)">
+                                        <div class="player-img player-imgg"></div>
+                                        <div class="plauer-btn-bg">
+                                            <div class="hoverlay">
+                                                <p>空.威德</p>
+                                                <p>Ambient 纪录片配乐</p>
+                                                <p>催眠擎天柱（短片配乐）</p>
+                                                <p>Philip Larkin Blues </p>
+                                            </div>
+                                            <span class="span-player-round-btn">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="cover-name" href="javascript:void(0)">万柳塘公园</a>
+                                <p>民谣 Folk</p>
+                            </div>
+                            <div class="cover">
+                                <div class="cover-img">
+                                    <a class="cover-a" href="javascript:void(0)">
+                                        <div class="player-img player-imgh"></div>
+                                        <div class="plauer-btn-bg">
+                                            <div class="hoverlay">
+                                                <p>空.威德</p>
+                                                <p>Ambient 纪录片配乐</p>
+                                                <p>催眠擎天柱（短片配乐）</p>
+                                                <p>Philip Larkin Blues </p>
+                                            </div>
+                                            <span class="span-player-round-btn">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="cover-name" href="javascript:void(0)">放肆的肆</a>
+                                <p>流行 Pop</p>
+                            </div>
+                            <div class="cover">
+                                <div class="cover-img">
+                                    <a class="cover-a" href="javascript:void(0)">
+                                        <div class="player-img player-imgi"></div>
+                                        <div class="plauer-btn-bg">
+                                            <div class="hoverlay">
+                                                <p>空.威德</p>
+                                                <p>Ambient 纪录片配乐</p>
+                                                <p>催眠擎天柱（短片配乐）</p>
+                                                <p>Philip Larkin Blues </p>
+                                            </div>
+                                            <span class="span-player-round-btn">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="cover-name" href="javascript:void(0)">王敖（音乐人）</a>
+                                <p>世界音乐 World</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor-featured">
+                    <div class="editor-header">
+                        <h2>编辑推荐</h2>
+                    </div>
+                    <div class="slick">
+                        <div class="slick-track">
+                            <div class="featured-item">
+                                <a class="featured-ita" href="javascript:void(0)">
+                                    <div></div>
+                                </a>
+                                <p>【专辑】</p>
+                                <h3>
+                                    <a href="javascript:void(0)">死谷烂谷</a>
+                                </h3>
+                                <h4>
+                                    <a href="javascript:void(0)">迷你噪音</a>
+                                </h4>
+                                <p>香港草根民谣乐队“迷你噪音”的第二张专辑。青春自有暗号续舞步，让所行所思超越口号。</p>
+                            </div>
+                            <div class="featured-item">
+                                <a class="featured-itb" href="javascript:void(0)">
+                                    <div></div>
+                                </a>
+                                <p>【歌曲】</p>
+                                <h3>
+                                    <a href="javascript:void(0)">马云们</a>
+                                </h3>
+                                <h4>
+                                    <a href="javascript:void(0)">SEENSCA</a>
+                                </h4>
+                                <p>为小说《马云们》做的配乐，“这年头还有谁不识马云!” 别光听歌，小说也可以看一看</p>
+                            </div>
+                            <div class="featured-item">
+                                <a class="featured-itc" href="javascript:void(0)">
+                                    <div></div>
+                                </a>
+                                <p>【音乐人】</p>
+                                <h3>
+                                    <a href="javascript:void(0)">按时放发蓝围巾</a>
+                                </h3>
+                                <h4>
+                                    <a href="javascript:void(0)">7人关注</a>
+                                </h4>
+                                <p>一些广东城市的实地录音，也可能不是广东，不是城市，都没有关系。不是音乐，胜似音乐。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./js/shuffling.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>

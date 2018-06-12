@@ -1,0 +1,278 @@
+a{
+    text-decoration: none;
+}
+.img-warp{
+    width:300px;
+    height:250px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+}
+.img-warp a img{
+    width:100%;
+}
+.img-warp .guanggao{
+    line-height: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+}
+/* ///////////////////////////////////// */
+.join{
+    width:300px;
+    height:100px;
+    margin-bottom:30px;
+    margin-top:10px;
+}
+.join .join-block{
+    float: left;
+    width: 98px;
+    margin-right: 2px;
+    height: 57px;
+    background-color: #F5F7F8;
+    text-align: center;
+}
+.join .join-block h2{
+    margin:0;
+}
+.join .join-block h2 a{
+    font-size: 17px;
+    font-weight: bold;
+    color: #072;
+    text-decoration:none;
+}
+.join .join-block h2 a:hover{
+    background-color:#138A64;
+    color:#fff;
+}
+.join .clear-fix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.join .join-button{
+    background-color: #139D72;
+    height: 38px;
+    color: #FFF;
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 3px;
+    border: 1px solid #138A64;
+    border-radius: 3px;
+    text-decoration:none;
+}
+.join .join-button:hover{
+    opacity:0.8;
+}
+/* //////////////////////////////////// */
+.tag-block{
+    width:300px;
+    height:217px;
+}
+.tag-block .tag-header{
+    font-size: 15px;
+    color: #222;
+    float: left;
+}
+.tag-block .tag-more{
+    float: right;
+    width: 30px;
+}
+.tag-block .tag-more a{
+    font-size: 13px;
+    color: #999;
+    line-height: 22px;
+}
+.tag-block .clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.tag-block table tbody tr th,.tag-block table tbody tr td{
+    width: 150px;
+    border-top: 1px solid #F8F6F6;
+    border-bottom: 1px solid #F8F6F6;
+    border-right: 1px solid #F8F6F6;
+}
+.tag-block table tbody tr th a,.tag-block table tbody tr td a{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    color: #138A64;
+    font-size: 15px;
+    padding-left: 6px;
+    text-decoration:none;
+}
+.tag-block table tbody tr th:hover{
+    background-color:rgba(195, 231, 220, 0.2);
+}
+.tag-block table tbody tr td:hover{
+    background-color:rgba(195, 231, 220, 0.2);
+}
+/* ///////////////////////////////////////////// */
+.hot-artist-songs{
+    width:300px;
+    height:661px;
+    margin-bottom:40px;
+}
+.hot-artist-songs .side-block{
+    margin-top:30px;
+}
+.hot-artist-songs .side-block .side-header{
+    font-size: 15px;
+    color: #222;
+    line-height: 26px;
+    border-bottom: 1px solid #E4E2E2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    position: relative;
+    vertical-align: middle;
+}
+.hot-artist-songs .side-block .side-header span{
+    font-size: 15px;
+    color: #222;
+    line-height: 26px;
+}
+.hot-artist-songs .side-block .side-header .play-button{
+    background: #139D72;
+    border: 1px solid #138A64;
+    border-radius: 3px;
+    line-height: 24px;
+    width: 88px;
+    height: 23px;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+}
+.hot-artist-songs .side-block .side-header .play-button span{
+    font-size: 13px;
+    color: #FFF;
+    line-height: 24px;
+    text-align: center;
+}
+.hot-artist-songs .side-block .side-header .play-button i{
+    display: inline-block;
+    width:0;
+    height:0;
+    border:6px solid transparent;
+    border-left:6px solid #fff;
+    margin-right:-6px;
+}
+.hot-artist-songs .side-block .content{
+    width:300px;
+    height:620px;
+}
+.hot-artist-songs .side-block .content .section-titles{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.hot-artist-songs .side-block .content .section-titles li{
+    display: inline-block;
+    font-size: 13px;
+}
+.content .section-titles li::before{
+    content: ' |';
+    color: #222;
+    padding: 0 3px;
+}
+
+.content .section-titles li a{
+    color: #999;
+}
+.content .section-titles .on::before{
+    content: '';
+}
+.content .section-titles .on a{
+    color: #138A64;
+    font-weight: bolder;
+}
+.content .lin-artist-songs .artist-songs{
+    position: relative;
+    padding-left: 60px;
+    list-style: none;
+    height: 60px;
+    cursor: pointer;
+}
+.content .lin-artist-songs .artist-songs:hover{
+    background-color:rgba(195, 231, 220, 0.2);    
+}
+.content .lin-artist-songs .artist-songs .avatar{
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    line-height: 48px;
+    text-align: center;
+}
+.content .lin-artist-songs .artist-songs h3{
+    background-color: transparent;
+    font-size: 15px;
+    color: #138A64;
+    line-height: 14px;
+    padding: 12px 0 8px 0;
+    margin: 0;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .lin-artist-songs .artist-songs p{
+    font-size: 13px;
+    color: #999;
+    line-height: 13px;
+    padding: 0;
+    margin: 0;
+}
+.content .lin-artist-songs .artist-songs .rank{
+    position: absolute;
+    height: 100%;
+    right: 10px;
+    top: 0;
+    font-weight: normal;
+    font-size: 35px;
+    color: #E6E6E6;
+    line-height: 60px;
+}
+.content .lin-artist-songs .artist-songs .avatar .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    display: none;
+}
+.content .lin-artist-songs .artist-songs .avatar .icon .icon-play{
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    line-height: 0px;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    display: inline-block;
+    zoom: 1;
+    border:6px solid transparent;
+    border-left:6px solid #fff;
+    text-align: center;
+}
+.content .lin-artist-songs .artist-songs:hover .icon{
+    background-color:#000;
+    opacity: 0.5;
+    display: block;  
+}

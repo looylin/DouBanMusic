@@ -1,0 +1,175 @@
+.wrapper .wrap-item .left-nav .popular-artists {
+    margin-top: 30px;
+    width: 675px;
+    /* height: 300px; */
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.wrapper .wrap-item .left-nav .popular-artists ul {
+    border-bottom: 2px solid #02A682;
+    margin-bottom: 0;
+}
+
+.wrapper .wrap-item .left-nav .popular-artists ul li {
+    display: inline-block;
+    font-size: 17px;
+    color: #222;
+    line-height: 30px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.wrapper .wrap-item .left-nav .popular-artists ul .rising {
+    font-size: 14px;
+    color: #999;
+}
+
+
+/* ///////////////////////////////////// */
+
+.wrapper .wrap-item .left-nav .popular-artists .artists {
+    width: 673px;
+    height: 429px;
+    background-color: rgba(239, 253, 253, 0.74);
+}
+
+.wrapper .wrap-item .left-nav .popular-artists .artists .artists-item {
+    width: 645px;
+    height: 414px;
+    margin: 0 0 0 30px;
+    padding-top: 15px;
+    background: transparent;
+}
+
+.artists .artists-item .cover {
+    width: 136px;
+    height: 136px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 1px #DFDCDC;
+    margin: 0 20px 70px 0;
+    float: left;
+}
+
+.artists .artists-item .cover .cover-a {
+    width: 125px;
+    height: 125px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.artists .artists-item .cover .cover-a .player-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+    margin-bottom: 5px;
+}
+.player-imga{
+    background-image: url(../img/ren/01.jpg);    
+}
+.player-imgb{
+    background-image: url(../img/ren/02.jpg);    
+}
+.player-imgc{
+    background-image: url(../img/ren/03.jpg);    
+}
+.player-imgd{
+    background-image: url(../img/ren/04.jpg);    
+}
+.player-imge{
+    background-image: url(../img/ren/04.jpg);    
+}
+.player-imgf{
+    background-image: url(../img/ren/05.jpg);    
+}
+.player-imgg{
+    background-image: url(../img/ren/06.jpg);    
+}
+.player-imgh{
+    background-image: url(../img/ren/07.jpg);    
+}
+.player-imgi{
+    background-image: url(../img/ren/08.jpg);    
+}
+
+.artists .artists-item .cover .cover-a .plauer-btn-bg:hover .hoverlay {
+    display: block;
+    background: #000;
+    opacity: 0.8;
+}
+
+.artists .artists-item .cover .cover-a .plauer-btn-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    zoom: 1;
+    border: none;
+}
+
+.artists .artists-item .cover .cover-a .plauer-btn-bg .hoverlay {
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding: 14px;
+}
+
+.artists .artists-item .cover .cover-a .plauer-btn-bg .hoverlay p {
+    display: block;
+    position: relative;
+    text-align: left;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFF;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.artists .artists-item .cover .cover-a .plauer-btn-bg .span-player-round-btn {
+    right: 10px;
+    bottom: 10px;
+    top: auto;
+    left: auto;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: -8px 0 0 -8px;
+    background: #222 !important;
+    opacity: .95;
+    border-radius: 100%;
+    text-align: center;
+    zoom: 1;
+}
+
+.artists .artists-item .cover .cover-a .plauer-btn-bg .span-player-round-btn i {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    margin: 5px 0 0 2px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    line-height: 0px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.artists .artists-item .cover .cover-name {
+    display: inline-block;
+    line-height: 100%;
+    margin: 17px 0 10px 10px;
+    font-size: 15px;
+    color: #138A64;
+    text-align: center;
+}
+
+.artists .artists-item .cover p {
+    margin: 0 0 0px 9px;
+    color: #999;
+}

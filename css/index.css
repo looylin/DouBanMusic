@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+/* /////////////////// */
+
+.header {
+    width: 100%;
+    height: 28px;
+    background-color: #545652;
+    min-width: 1024px;
+}
+
+.header .lin-nav-item {
+    font: 12px Helvetica, Arial, sans-serif;
+    line-height: 1.62;
+    font-size: 12px;
+}
+
+.header .lin-nav-item ul li {
+    display: inline-block;
+    zoom: 1;
+    line-height: 28px;
+    font-size: 12px;
+    vertical-align: baseline;
+}
+
+.header .lin-nav-item ul li a {
+    color: #d5d5d5;
+    display: inline-block;
+    zoom: 1;
+    padding: 0 12px;
+    height: 28px;
+}
+
+.header .lin-nav-item ul li:hover a,
+.header .lin-nav-info a:hover,
+.header .lin-nav-doubanapp:hover a {
+    color: #fff;
+}
+
+.header .lin-nav-info {
+    float: right;
+    margin: 0 12px 0 0;
+    line-height: 28px;
+}
+
+.header .lin-nav-info a {
+    display: inline-block;
+    zoom: 1;
+    margin: 0;
+    padding: 0 12px;
+    height: 28px;
+    color: #d5d5d5;
+    font-size: 14px;
+}
+
+.header .lin-nav-doubanapp {
+    position: relative;
+    float: right;
+    margin-right: 5px;
+    line-height: 28px;
+}
+
+.header .lin-nav-doubanapp a {
+    display: inline-block;
+    zoom: 1;
+    padding: 0 8px;
+    height: 28px;
+    color: #d5d5d5;
+    font-size: 14px;
+}
+
+
+/* //////////header部分完/////////// */
+
+.music {
+    background: #f0f3ef;
+    position: relative;
+    width: 100%;
+    min-width: 1024px;
+}
+
+.music .nav-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    height: 80px;
+    border-color: #e3e9e2;
+    border-bottom: 1px solid #e5ebe4;
+}
+
+.music .nav-wrap .nav-primary {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: visible !important;
+    position: absolute;
+    padding: 10px 0 5px;
+    zoom: 1;
+}
+
+.music .nav-wrap .nav-primary .nav-logo {
+    float: left;
+    height: 56px;
+    width: 145px;
+    margin: 16px 13px 0 0;
+    background: url(../img/logo.png) no-repeat;
+}
+
+.music .nav-wrap .nav-primary .nav-search {
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+}
+
+.music .nav-wrap .nav-primary .nav-search .inp {
+    width: 470px;
+    height: 34px;
+    margin-top: 10px;
+}
+
+.music .nav-wrap .nav-primary .nav-search .inp .input {
+    background: #fff;
+    width: 91%;
+    height: 30px;
+    padding-left: 10px;
+    float: left;
+}
+
+.music .nav-wrap .nav-primary .nav-search .inp #ajaxdata {
+    position: absolute;
+    top: 41px;
+    width: 428px;
+    z-index: 1;
+}
+
+.music .nav-wrap .nav-primary .nav-search .inp #ajaxdata li {
+    position: relative;
+    width: 428px;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    top: 0;
+}
+.music .nav-wrap .nav-primary .nav-search .inp #ajaxdata li .lin{
+    margin-left:55px;
+}
+.music .nav-wrap .nav-primary .nav-search .inp #ajaxdata li a {
+    display: inline-block;
+    color: #404040;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /* margin-left: 10px; */
+}
+
+.music .nav-wrap .nav-primary .nav-search .inp #ajaxdata li div em {
+    color: #424242;
+    font-size: 14px;
+    text-align: center;
+}
+
+.music .nav-wrap .nav-primary .nav-search .inp #ajaxdata li img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.music .nav-wrap .nav-primary .nav-search .inp .nav-btn {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    float: right;
+    border: none;
+    background: url(../img/bg.png) no-repeat 0 -41px;
+}
+
+
+/* ////////////////music 完////////////////////// */
+
+.music-nav {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0;
+    overflow: hidden;
+    zoom: 1;
+    background-color: #f0f3ef;
+    height: 35px;
+    min-width: 1024px;
+}
+
+.music-nav .nav-items {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.music-nav .nav-items ul {
+    margin: 9px;
+    line-height: 15px;
+}
+
+.music-nav .nav-items ul li {
+    margin-right: 25px;
+    display: inline-block;
+}
+
+.music-nav .nav-items ul li a {
+    color: #555d53;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.music-nav .nav-items ul li a:hover {
+    color: #fff;
+    background-color: #545652;
+}
